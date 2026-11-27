@@ -24,7 +24,13 @@ Running example: BSW in the 2025 Bundestag election, certified at 4.981% of seco
 
 The reported figure is an output of a process, not the quantity of interest. Map the process before stating any hypothesis.
 
-![BSW counting chain: 5 stages, where errors enter and what catches them](process_chain.png)
+| Stage | Error that can enter here | What can catch it |
+| --- | --- | --- |
+| **Count at the precinct**: ballots sorted, stacks tallied | Ballots in the wrong stack; whole stacks swapped | Only a recount of the ballots |
+| **Signed protocol**: tallies recorded and signed | A tally written in the wrong row | Only a recount; the protocol is the reference |
+| **Quick report**: feeds the preliminary result P | Figures differ from the protocol | Comparison with the protocol during certification |
+| **Data entry and aggregation**: municipality, then district | Figures entered under the neighboring party | Plausibility checks; comparison with the protocol |
+| **Certification**: district committee; result F | Errors from the first two stages pass through unseen | Recounts on suspicion only, about 0.4% of precincts |
 
 Corrections between P and F come from the later stages; errors made in the count or the protocol survive unless the precinct is recounted. The 0.4% recount share is the complainants’ compilation of the returning officers’ figures (Bundestag 21/3100).
 
